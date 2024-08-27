@@ -1,10 +1,67 @@
 # ikt450
 
+## Table of Contents
 
-# Preparations
-### Clone repo:
-	git clone git@github.com:Jon-Bull/ikt450.git
-    cd ikt450/
+1. [Preparations](#preparations)
+   - [Clone the Repository](#clone-the-repository)
+   - [Setting Up a Virtual Environment](#setting-up-a-virtual-environment)
+     - [Using `venv`](#using-venv-pythons-built-in-tool)
+     - [Using `conda`](#using-conda-if-you-prefer-using-anacondaminiconda)
+   - [Setting Up `PYTHONPATH`](#setting-up-pythonpath)
+     - [On Linux or macOS](#on-linux-or-macos)
+     - [On Windows](#on-windows)
+2. [Usage](#usage)
+   - [For each feature 🔃](#for-each-feature-🔃)
+
+## Preparations
+### Clone the Repository:
+```bash
+git clone git@github.com:Jon-Bull/ikt450.git
+cd ikt450/
+```
+
+### Setting Up a Virtual Environment
+
+#### Using `venv` (Python's built-in tool):
+
+1. **Create a Virtual Environment**:
+   ```bash
+   python3 -m venv env
+   ```
+   This will create a directory named `env` that contains your virtual environment.
+
+2. **Activate the Virtual Environment**:
+   - On Linux or macOS:
+     ```bash
+     source env/bin/activate
+     ```
+   - On Windows:
+     ```cmd
+     .\env\Scripts\activate
+     ```
+
+3. **Install Required Packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+#### Using `conda` (if you prefer using Anaconda/Miniconda):
+
+1. **Create a Conda Environment**:
+   ```bash
+   conda create --name ikt450 python=3.x
+   ```
+   Replace `3.x` with the desired Python version.
+
+2. **Activate the Conda Environment**:
+   ```bash
+   conda activate ikt450
+   ```
+
+3. **Install Required Packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### Setting Up `PYTHONPATH`
 
@@ -45,9 +102,9 @@ To ensure that Python can properly locate the modules within this project, you s
    setx PYTHONPATH "%PYTHONPATH%;C:\REPLACE\THIS\PATH\ikt450\"
    ```
 
-# Usage 
+## Usage 
 
-## For each feature 🔃 
+### For each feature 🔃 
 
 |              Before              |              Coding...            |              After               |
 :---------------------------------:|:---------------------------------:|:---------------------------------:
