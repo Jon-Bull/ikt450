@@ -13,6 +13,7 @@
 2. [Usage](#usage)
    - [For each feature 🔃](#for-each-feature-🔃)
 
+
 ## Preparations
 ### Clone the Repository:
 ```bash
@@ -22,7 +23,15 @@ cd ikt450/
 
 ### Setting Up a Virtual Environment
 
+<details>
+<summary><i>Show steps</i></summary>
+<br>
+
+
 #### Using `venv` (Python's built-in tool):
+<details>
+<summary><i>Show steps</i></summary>
+<br>
 
 1. **Create a Virtual Environment**:
    ```bash
@@ -44,8 +53,12 @@ cd ikt450/
    ```bash
    pip install -r requirements.txt
    ```
+</details>
 
 #### Using `conda` (if you prefer using Anaconda/Miniconda):
+<details>
+<summary><i>Show steps</i></summary>
+<br>
 
 1. **Create a Conda Environment**:
    ```bash
@@ -63,11 +76,21 @@ cd ikt450/
    pip install -r requirements.txt
    ```
 
+</details>
+</details>
+
 ### Setting Up `PYTHONPATH`
+<details>
+<summary><i>Show steps</i></summary>
+<br>
 
 To ensure that Python can properly locate the modules within this project, you should add the project's root directory to your `PYTHONPATH` environment variable. This can be done by adding the following line to your shell configuration file (e.g., `.bashrc`, `.zshrc`, `.bash_profile`, etc.), depending on your operating system:
 
 #### On Linux or macOS:
+<details open>
+<summary><i>Show steps</i></summary>
+<br>
+
 1. Open your terminal.
 2. Edit your `.bashrc` or `.zshrc` file:
    ```bash
@@ -91,7 +114,13 @@ To ensure that Python can properly locate the modules within this project, you s
    source ~/.zshrc
    ```
 
+</details>
+
 #### On Windows:
+<details open>
+<summary><i>Show steps</i></summary>
+<br>
+
 1. Open Command Prompt as an administrator.
 2. Set the `PYTHONPATH` for your session:
    ```cmd
@@ -102,7 +131,14 @@ To ensure that Python can properly locate the modules within this project, you s
    setx PYTHONPATH "%PYTHONPATH%;C:\REPLACE\THIS\PATH\ikt450\"
    ```
 
+</details>
+</details>
+
 ## Usage 
+
+<details>
+<summary><i>Show steps</i></summary>
+<br>
 
 ### For each feature 🔃 
 
@@ -121,3 +157,4 @@ To ensure that Python can properly locate the modules within this project, you s
 	git checkout main
 	git pull
 	
+</details>
