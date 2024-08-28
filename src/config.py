@@ -7,8 +7,6 @@ def get_paths(IN_COLAB=False):
 	PATH_PROJECT_ROOT = '/content/drive/MyDrive/ikt450' if IN_COLAB else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 	PATH_ASSIGNMENTS = os.path.join(PATH_PROJECT_ROOT, "assignments")
-	PATH_ASS_1 = os.path.join(PATH_ASSIGNMENTS, "1_knn")
-	PATH_ASS_2 = os.path.join(PATH_ASSIGNMENTS, "2_neural_networks")
 
 	PATH_COMMON = os.path.join(PATH_PROJECT_ROOT, "common")
 	PATH_COMMON_DATASETS = os.path.join(PATH_COMMON, "datasets")
@@ -24,8 +22,6 @@ def get_paths(IN_COLAB=False):
 	return {
         'PATH_PROJECT_ROOT': PATH_PROJECT_ROOT,
         'PATH_ASSIGNMENTS': PATH_ASSIGNMENTS,
-        'PATH_ASS_1': PATH_ASS_1,
-        'PATH_ASS_2': PATH_ASS_2,
         'PATH_COMMON': PATH_COMMON,
         'PATH_COMMON_DATASETS': PATH_COMMON_DATASETS,
         'PATH_COMMON_NOTEBOOKS': PATH_COMMON_NOTEBOOKS,
@@ -33,4 +29,5 @@ def get_paths(IN_COLAB=False):
         'PATH_COMMON_SCRIPTS': PATH_COMMON_SCRIPTS,
         'PATH_REPORTS': PATH_REPORTS,
         'PATH_SRC': PATH_SRC,
+	'PATH_1_KNN': os.path.join(PATH_ASSIGNMENTS, "1_knn"),
     }
