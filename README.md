@@ -1,4 +1,4 @@
-# ikt450
+# ikt450 - Deep Learning Systems
 
 ## Table of Contents
 
