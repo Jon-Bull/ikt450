@@ -30,4 +30,5 @@ def get_paths(IN_COLAB=False):
         'PATH_REPORTS': PATH_REPORTS,
         'PATH_SRC': PATH_SRC,
 	'PATH_1_KNN': os.path.join(PATH_ASSIGNMENTS, "1_knn"),
+        'PATH_2_MLP': os.path.join(PATH_ASSIGNMENTS, '2_mlp'),
     }
