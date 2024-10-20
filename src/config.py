@@ -32,4 +32,5 @@ def get_paths(IN_COLAB=False):
 	'PATH_1_KNN': os.path.join(PATH_ASSIGNMENTS, "1_knn"),
         'PATH_2_MLP': os.path.join(PATH_ASSIGNMENTS, '2_mlp'),
         'PATH_CNN': os.path.join(PATH_ASSIGNMENTS, 'CNN'),
+        'PATH_OBJECT_DETECTION': os.path.join(PATH_ASSIGNMENTS, 'object_detection'),
     }
