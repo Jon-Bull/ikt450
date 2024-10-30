@@ -13,6 +13,7 @@ import json
 import datetime
 import time
 import warnings
+import zipfile
 
 # Data manipulation and analysis
 import numpy as np
@@ -25,9 +26,24 @@ import seaborn as sns
 # Machine learning libraries
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from sklearn.metrics import (
+    accuracy_score, classification_report, 
+    confusion_matrix, f1_score, precision_score, 
+    recall_score, mean_squared_error, mean_absolute_error, r2_score
+)
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
+
+# PyTorch and related libraries
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+from torch.utils.data import DataLoader, ConcatDataset
+
+# Torchvision imports
+import torchvision
+from torchvision import datasets, models, transforms
 
 # Time series specific libraries
 import statsmodels.api as sm
@@ -36,13 +52,8 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from statsmodels.tsa.stattools import adfuller, acf, pacf
 
-# Deep learning libraries (if needed)
-#import tensorflow as tf
-#from tensorflow.keras.models import Sequential
-#from tensorflow.keras.layers import Dense, LSTM, Dropout
-
 # Environment management
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # Other
 from collections import Counter
