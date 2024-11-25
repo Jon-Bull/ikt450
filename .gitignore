@@ -178,5 +178,16 @@ assignments/**/drafts/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+
+# Tensorboard
+tensorboard/
+
+runs/
+data/
+results/
+*.pth
+settings.json
+
 # Visual Studio Code
 .vscode/
+
